@@ -10,6 +10,7 @@ friggen_pigeons = data.each_with_object({}) do |(category, stats), pigeons_yo|
       if !pigeons_yo[pigeon][category]
         pigeons_yo[pigeon][category] = []
       end
+      binding.pry
       pigeons_yo[pigeon][category] << qualities
     end
   end
